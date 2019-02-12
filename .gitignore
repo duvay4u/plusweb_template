@@ -5,6 +5,11 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# vscode 셋팅 환경파일 제외
+.vscode/
+# log4js 생성되는 log 디렉토리 제외
+.log/
+
 # Runtime data
 pids
 *.pid

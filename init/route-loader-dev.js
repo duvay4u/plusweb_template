@@ -1,0 +1,28 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// init > route-loader-dev.js
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+class RouteLoaderDEV {
+
+	constructor( app ) {
+
+		this.app = app;
+	}
+
+	init() {
+
+		// Route 등록
+		this.app.use( '/', require( '../route/dev/index' ) );
+	}
+}
+
+
+module.exports = ( app ) => {
+
+	let routerLoaderDEV = new RouteLoaderDEV( app );
+	routerLoaderDEV.init();
+
+	return routerLoaderDEV;
+}
