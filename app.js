@@ -35,7 +35,7 @@ if( 'development' == process.env.NODE_ENV ) {
 //
 // -- vhost 설정 -- : main, sub domain
 //
-app.use( vhost( process.env.DOMAIN_MAIN, app_www ) );// www.localhost.net
+app.use( vhost( process.env.DOMAIN_MAIN, app_www ) );// localhost.net
 app.use( vhost( process.env.DOMAIN_WWW, app_www ) );// www.localhost.net
 app.use( vhost( process.env.DOMAIN_DEV, app_dev ) );// dev.localhost.net
 
